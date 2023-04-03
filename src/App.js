@@ -23,7 +23,7 @@ export default function App() {
           path="signup"
           element={
             <Suspense fallback={<Fallback />}>
-              <Main/>
+              <Main />
             </Suspense>
           }
         />
