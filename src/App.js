@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Homepage from './homepage.js';
 import Fallback from './fallback.jsx';
 const Main = lazy(() => import('./routes/main/main.jsx'));
-const AuthPage = lazy(() => import('./routes/signup-and-login/signup-and-login.jsx'));
+//const AuthPage = lazy(() => import('./routes/signup-and-login/signup-and-login.jsx'));
 //const Login = lazy(() => import('./routes/signup-and-login/login.jsx'));
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
           path="signup"
           element={
             <Suspense fallback={<Fallback />}>
-              <AuthPage />
+              <Main/>
             </Suspense>
           }
         />
